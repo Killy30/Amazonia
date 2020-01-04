@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amazonia</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar content -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="">Amazonia</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="myList.html">My List</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input id="textSearch" class="form-control mr-sm-2" type="search" placeholder="Search Author" aria-label="Search">
+            <button id="btnSearch" class="btn btn-outline-info my-2 my-sm-0" type="button">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-3  mt-5">
+                <div class="card text-center">
+                    <div class="card-header bg-dark">
+                        <h1 class="text-white">Amazonia</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <a class="btn btn-primary btn-block" href="/insertBook">Add Book</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            </div>
+        
+            <div class="col-md-9 mt-5">
+                <div id="books"></div>
+            </div>
+        
+        </div>
+    </div>
+
+    <script src="book.js"></script>
+</body>
+</html>
